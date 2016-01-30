@@ -1,0 +1,11 @@
+<a href="{{actor.getURL}}">{{actor.name}}</a> published a new blog post <a href="{{object.getURL}}">{{object.title}}</a>
+
+<div class="container">
+	{{& object.getExcerpt}}
+</div>
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+	<a href="{{object.getURL}}" class="elgg-button" itemprop="target">Read Full Blog</a>
+    <meta itemprop="name" content="Reply Full Blog"/>
+</div>
+<meta itemprop="description" content="Reply {{object.title}} at {{site.name}}"/>

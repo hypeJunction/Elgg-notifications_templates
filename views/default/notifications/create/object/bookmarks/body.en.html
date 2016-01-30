@@ -1,0 +1,13 @@
+<a href="{{actor.getURL}}">{{actor.name}}</a> bookmarked a resource <a href="{{object.getURL}}">{{object.title}}</a>
+
+<p>Address: <a href="{{object.address}}">{{object.address}}</a></p>
+
+<div class="container">
+	{{& object.description}}
+</div>
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+	<a href="{{object.getURL}}" class="elgg-button" itemprop="target">View & comment</a>
+    <meta itemprop="name" content="View Bookmark"/>
+</div>
+<meta itemprop="description" content="View {{object.title}} at {{site.name}}"/>

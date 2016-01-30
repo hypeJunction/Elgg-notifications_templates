@@ -1,0 +1,11 @@
+<a href="{{actor.getURL}}">{{actor.name}}</a> posted to <a href="{{object.getURL}}">the wire</a>
+
+<div class="container">
+	{{& object.description}}
+</div>
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+	<a href="{{object.getURL}}" class="elgg-button" itemprop="target">Reply</a>
+    <meta itemprop="name" content="Reply to Wire Post"/>
+</div>
+<meta itemprop="description" content="Reply to wire post at {{site.name}}"/>

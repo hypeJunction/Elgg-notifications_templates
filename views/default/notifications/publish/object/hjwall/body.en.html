@@ -1,0 +1,17 @@
+<div class="elgg-image-block container">
+	<div class="elgg-image">
+		<img src="{{actor.getIconURL}}" alt="{{actor.name}}" />
+	</div>
+	<div class="elgg-body">
+		{{& object.formatSummary}}
+	</div>
+</div>
+
+<p>{{& object.formatMessage}}</p>
+{{& object.formatAttachments}}
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+	<a href="{{object.getURL}}" class="elgg-button" itemprop="target">View Post</a>
+    <meta itemprop="name" content="View Post"/>
+</div>
+<meta itemprop="description" content="View post at {{site.name}}"/>

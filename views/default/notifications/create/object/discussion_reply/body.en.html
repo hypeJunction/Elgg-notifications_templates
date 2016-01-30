@@ -1,0 +1,11 @@
+<a href="{{actor.getURL}}">{{actor.name}}</a> replied to a discussion <a href="{{object.getURL}}">{{target.title}}</a>
+
+<div class="container">
+	{{& object.description}}
+</div>
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+	<a href="{{object.getURL}}" class="elgg-button" itemprop="target">Reply</a>
+    <meta itemprop="name" content="Reply to Discussion"/>
+</div>
+<meta itemprop="description" content="Reply to {{target.title}} at {{site.name}}"/>

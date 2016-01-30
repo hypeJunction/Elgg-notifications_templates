@@ -1,0 +1,22 @@
+Dear {{recipient.name}},
+
+{{#actor}}
+	{{actor.name}} has created an account for you at <a href="{{site.getURL}}">{{site.name}}</a>.
+{{/actor}}
+{{^actor}}
+	A use raccount has been created for you at <a href="{{site.getURL}}">{{site.name}}</a>.
+{{/actor}}
+
+Your login credentials are as follows:
+
+Username: <b>{{recipient.username}}</b>
+Password: <b>{{params.password}}</b>
+
+Once you have logged in, we highly recommend that you change your password.
+You can do so in your <a href="{{site.getURL}}settings/user/{{recipient.username}}">account settings</a>.
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ViewAction">
+	<a href="{{site.getURL}}login" class="elgg-button" itemprop="target">Login</a>
+    <meta itemprop="name" content="Login"/>
+</div>
+<meta itemprop="description" content="Login to {{site.name}}"/>

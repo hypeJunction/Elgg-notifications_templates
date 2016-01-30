@@ -1,0 +1,11 @@
+<p>Dear {{recipient.name}},</p>
+<p>Before you can start you using <a href="{{site.getURL}}">{{site.name}}, you must confirm your email address.</p>
+
+<div itemprop="potentialAction" itemscope itemtype="http://schema.org/ConfirmAction">
+    <meta itemprop="name" content="Confirm Email"/>
+    <div itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+		<a class="elgg-button" itemprop="url" href="{{params.confirm_link}}">Confirm</a>
+    </div>
+</div>
+
+<meta itemprop="description" content="Email confirmation request for {{recipient.email}}"/>
