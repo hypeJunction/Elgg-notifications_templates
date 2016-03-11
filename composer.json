@@ -1,6 +1,6 @@
 {
 	"name": "hypejunction/notifications_templates",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "elgg-plugin",
 	"description": "Notification templates for Elgg",
 	"homepage": "http://hypejunction.com",
